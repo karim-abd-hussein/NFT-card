@@ -1,0 +1,190 @@
+
+:root{
+
+    --famliy-outfit:'outfit','sans';
+    --main-color:hsl(215, 51%, 70%);
+    --cayn-color:hsl(178, 100%, 50%);
+}
+
+
+body{
+    margin: 0;
+    background-color: hsl(217, 54%, 11%);
+    font-family: var(--famliy-outfit);
+
+}
+
+p{
+    font-size: 18px;
+}
+
+main{
+
+    margin: auto;
+    margin-top: 4vh;
+    width: 37.6em;
+    border-radius: 1.5em;
+    padding: 2em;
+    background-color: hsl(216, 50%, 16%);
+    cursor: pointer;
+}
+
+@media (max-width:667px){
+
+    main{
+
+        width: 80%;
+    }
+}
+
+.images{
+
+width: 100%;
+position: relative;
+border-radius: 13px;
+
+}
+
+.equilibrium{
+border-radius: inherit;
+width: 100%;
+}
+
+.img-hover{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 500ms;
+    border-radius: inherit;
+    opacity: .5;
+}
+
+.img-hover >img{
+
+    opacity: 0;
+    transition: inherit;
+    width: 4em;
+}
+
+.images .img-hover:hover{
+
+    background-color: var(--cayn-color);
+    
+}
+
+.img-hover:hover img{
+
+    opacity: 1;
+
+}
+
+
+
+.container{
+
+    padding-top: 40px;
+
+}
+
+.container >a{
+
+    color: white;
+    text-decoration: none;
+    font-size: 2.5em;
+    font-weight: 500;
+
+}
+
+.container >a:hover{
+
+    color: var(--cayn-color);
+}
+
+.container >a +p{
+
+color: var(--main-color);
+font-size: 2em;
+
+}
+
+.date-container{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 0.1em solid var(--main-color);
+    padding-bottom: 15px;
+}
+
+.date-container div{
+
+    display: flex;
+    align-items: center;
+}
+
+.date-container div img{
+
+    width: 1.5em;
+
+}
+
+.date-container div p{
+
+    font-size: 1.7em;
+    margin-left: 10px;
+
+}
+
+.eth{
+
+    color: var(--cayn-color) ;
+}
+
+.date{
+
+    color: var(--main-color);
+}
+
+.profile-container{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.profile-container img{
+
+     width: 3em;
+     border: 1px solid white;
+     border-radius: 100%;
+     margin:20px 20px 20px 0;
+}
+
+.profile-container span{
+
+    color: white;
+    font-size: 1.6em;
+    margin: 0 5px;
+}
+
+.profile-container span:nth-of-type(1){
+
+    color:var(--main-color);
+}
+
+.profile-container span:nth-of-type(2){
+
+    color:hsl(0, 0%, 100%);
+}
+
+.profile-container span:nth-of-type(2):hover{
+
+    color:var(--cayn-color);
+}
