@@ -19,7 +19,7 @@ A visually appealing and interactive NFT preview card component, designed to sho
 ---
 
 ## Preview
-![NFT Preview Card](./images/desktop-preview.jpg)
+![NFT Preview Card](./design/desktop-preview.jpg)
 
 ---
 
